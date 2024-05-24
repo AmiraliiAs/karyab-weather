@@ -1,0 +1,186 @@
+@font-face{
+    font-family: "shabnam";
+    src: url("Shabnam-FD.woff2") format("woff2");
+}
+
+:root{
+    --bgc1:rgba(9,40,154,0.9);
+    --bgc2:rgba(25,118,210,0.9);
+    --bgc3:rgba(33,150,243,0.9);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+    width: 98vw;
+    height: 100vh;
+    font-family: "shabnam";
+    background: var(bgc1);
+    background: linear-gradient(180deg, var(--bgc1) 0%, var(--bgc2) 60%, var(--bgc3) 100%) no-repeat, url(vecteezy_3d-blue-abstract-wave-background_27961066.jpg) no-repeat center center / cover;
+    color: white;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.header_loc{
+display: flex;
+align-items: center;
+}
+
+.loc_svg{
+    width: 22px;
+    height: 22px;
+    color: white;
+}
+
+
+.header_date{
+
+}
+
+.weather_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.weekly_table{
+    
+    background-color: rgb(26, 35, 126,0.5);
+    width: 65%;
+    text-align: center;
+    border: 1px solid rgb(26, 35, 126,0.2);
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.today_weather{
+   display: flex;
+   flex-direction: column;
+}
+.weekly_table{
+}
+
+.th1{
+    display: flex;
+    margin: 3%;
+   
+}
+
+td{
+    padding: 7px;
+    text-align: right;
+}
+
+tr{
+    text-align: center;
+    border-bottom: 2px solid rgba(232, 234, 246,0.3);
+    margin: 8px;
+    padding: 10px;
+}
+
+.today_svg{
+}
+
+.today_temp{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+.today_temp_max{
+
+}
+
+.today_temp_min{
+
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width:100%;
+
+    }
+
+    .weather_list{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+
+@media screen and (min-width:601px){
+    .container{
+        width:100%
+    }
+
+    .weather_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+}
+
+
+@media screen and (min-width:768px){
+    .container{
+        width:100%
+    }
+
+    .weather_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+}
+
+
+@media screen and (min-width:992px){
+    .container{
+        width:1000px
+    }
+
+    .weather_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+}
+
+
+@media screen and (min-width:1200px){
+    .container{
+        width: 1216px;
+        margin:  auto;
+    }
+
+    .weather_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+}
+
